@@ -1,0 +1,53 @@
+<header>
+    <div id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div id="menuToggle">
+        <input onclick="slide(); hamburger()" />
+    </div>
+    <nav role="navigation">
+        <ul id="navbar">
+            <a href="/home" {{#if home}} class="active" {{/if}}>
+                <li>Home</li>
+            </a>
+            <a href="/rent" {{#if rent}} class="active" {{/if}}>
+                <li>Rent</li>
+            </a>
+            <a href="/about" {{#if about}} class="active" {{/if}}>
+                <li>About</li>
+            </a>
+        </ul>
+    </nav>
+    <a href="/home">
+        <p id="title">Pushing [P]</p>
+    </a>
+    <div id="account">
+        <ul>
+            <li>
+                {{#if loggedIn}}
+                <a id="account" href="/account">
+                    <p>Account</p>
+                </a>
+                {{else}}
+                <a id="login" href="/login">
+                    <p>Login</p>
+                </a>
+                {{/if}}
+            </li>
+        </ul>
+    </div>
+</header>
+
+<ul id="menu">
+    <a href="/home">
+        <li>Home</li>
+    </a>
+    <a href="/rent">
+        <li>Rent</li>
+    </a>
+    <a href="/about">
+        <li>About</li>
+    </a>
+</ul>
