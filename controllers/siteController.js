@@ -3,7 +3,12 @@ const router = express.Router();
 const routeRoot = '/';
 
 // List of routes
-router.get('/', home);
+router.get('/', (req, res) => {
+    res.json({
+        message: 'Hello from Express.js!'
+    })
+});
+
 router.get('/Home', home);
 router.get('/Poetry', poetry);
 router.get('/Canada', canada);
