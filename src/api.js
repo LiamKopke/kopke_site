@@ -31,7 +31,7 @@ app.use(express.static('public'));
 // Assume files are in the controllers folder and that all controllers export router and routeRoot
 controllers.forEach((controllerName) => {
     try {
-        const controllerRoutes = require('./controllers/' + controllerName);
+        const controllerRoutes = require('../controllers/' + controllerName);
         app.use(controllerRoutes.routeRoot, controllerRoutes.router);
     } catch (error) {
         //fail gracefully if no routes for this controller
