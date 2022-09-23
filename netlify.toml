@@ -1,8 +1,20 @@
 [build]
     functions = "functions"
 [[redirects]]
-  to = "./netlify/functions/api/:splat"
-  from = "/*"
+  to = "./netlify/functions/api/"
+  from = "/"
+  status = 200
+[[redirects]]
+  to = "./netlify/functions/api/home"
+  from = "/"
+  status = 200
+[[redirects]]
+  to = "./netlify/functions/api/canada"
+  from = "/canada"
+  status = 200
+[[redirects]]
+  to = "./netlify/functions/api/poetry"
+  from = "/poetry"
   status = 200
 [dev]
   publish = "dist"
