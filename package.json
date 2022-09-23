@@ -1,29 +1,26 @@
 {
-  "name": "Ski Shop",
+  "name": "kopke_site",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "Made by Liam",
+  "main": "index.js",
   "scripts": {
-    "test": "jest --verbose /tests"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiamKopke/kopke_site.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LiamKopke/kopke_site/issues"
+  },
+  "homepage": "https://github.com/LiamKopke/kopke_site#readme",
   "dependencies": {
-    "add-time": "^1.0.0",
-    "bcrypt": "^5.0.1",
-    "cookie-parser": "^1.4.6",
-    "express": "^4.18.0",
-    "express-handlebars": "^6.0.3",
-    "express-list-routes": "^1.1.3",
-    "jest": "^27.5.1",
-    "mysql2": "^2.3.3",
-    "nodemailer": "^6.7.5",
-    "pino": "^7.10.0",
-    "pino-http": "^6.6.0",
-    "puppeteer": "^13.5.2",
-    "supertest": "^6.2.2",
-    "uuid": "^8.3.2",
-    "validator": "^13.7.0",
-    "verbose": "^0.2.3"
+    "emailjs": "^4.0.1",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "jsdoc": "^3.6.11",
+    "serverless-http": "^3.0.2"
   }
 }
