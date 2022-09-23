@@ -2,9 +2,10 @@
   "name": "kopke_site",
   "version": "1.0.0",
   "description": "Made by Liam",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "./src/api.js",
+  "scripts": {      
+    "server": "NODE_ENV=development ./node_modules/.bin/netlify-lambda serve src",
+    "build": "NODE_ENV=production ./node_modules/.bin/netlify-lambda build src"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
     "express": "^4.18.1",
     "express-handlebars": "^6.0.6",
     "jsdoc": "^3.6.11",
+    "netlify-lambda": "^2.0.15",
     "serverless-http": "^3.0.2"
   }
 }

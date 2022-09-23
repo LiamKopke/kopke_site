@@ -23,6 +23,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
+
+// Used for css / images to start from public folder
 app.use(express.static('public'));
 
 // Register routes from all controllers 
