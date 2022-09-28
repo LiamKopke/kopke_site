@@ -1,0 +1,83 @@
+/*#region =========== GLOBAL =========== */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+	background: var(--white);
+	color: var(--black);
+}
+
+:root {
+	--black: #eef5fc;
+	--grey: #5c5c5c;
+	--primary: #a47b4f;
+	--secondary: #cb995c;
+	--white: #2a2a2a;
+	--whiteText: #eef5fc;
+	--blackButton: #2a2a2a;
+	--box-shadow: 0 0.6rem 1.1rem rgba(0, 0, 0, 0.3); /* change 1.1 or 1.2*/
+}
+
+.light-mode-variables {
+	--white: #eef5fc;
+	--black: #2a2a2a;
+}
+
+.hide {
+	display: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.title {
+	margin: 0.5rem 0 0, 5rem 0;
+	font-size: 1.8rem;
+	font-weight: 500;
+	color: var(--black);
+	padding-bottom: 0.1rem;
+	font-family: "Square Peg", cursive;
+}
+.title:hover {
+	color: var(--secondary);
+}
+
+ul,
+p {
+	padding: 0;
+	margin: 0;
+}
+
+li,
+a {
+	list-style: none;
+	color: var(--black);
+	text-decoration: none;
+}
+
+li:hover,
+a:hover {
+	color: var(--secondary);
+}
+
+.navFlex {
+	flex: 1 1 0px;
+}
+
+.left {
+	justify-content: flex-start;
+}
+
+.center {
+	justify-content: center;
+}
+
+.right {
+	justify-content: flex-end;
+}

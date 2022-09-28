@@ -1,0 +1,37 @@
+header {
+	width: 100%;
+	position: sticky;
+	position: -webkit-sticky;
+	z-index: 999;
+	top: 0;
+	background-color: var(--white);
+	display: flex;
+	align-items: center;
+	padding-left: 2vh;
+	padding-right: 2vh;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	border-bottom: 1px solid var(--secondary);
+}
+
+#navLinks {
+	display: flex;
+	justify-content: flex-start;
+}
+
+#navLinks a {
+	text-decoration: none;
+	color: var(--black);
+	font-size: 1.15rem;
+	padding: 1vh;
+}
+
+header p {
+	text-align: right;
+}
+
+/* Center .logo on the screen */
+.logo {
+	display: flex;
+	justify-content: center;
+}
