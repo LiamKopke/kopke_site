@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="../public/css/globals.css" />
 		<link rel="stylesheet" href="../public/css/header.css" />
 		<link rel="stylesheet" href="../public/css/body.css" />
-		<link rel="stylesheet" href="../public/css/footerLinks.css" />
+		<link rel="stylesheet" href="../public/css/footer.css" />
 		<script
 			type="text/javascript"
 			src="../public/js/index.js"
@@ -52,15 +52,19 @@
 						</a>
 					</ul>
 				</nav>
-				<a class="logo navFlex" href="/">
-					<img
-						src="./public/images/coat_of_arms.png"
-						width="39.2vh"
-						height="56.4vh" />
-				</a>
-				<a href="/" class="navFlex">
-					<p class="title">Kopke.ca</p>
-				</a>
+				<div class="center">
+					<a class="navFlex" href="/">
+						<img
+							src="./public/images/coat_of_arms.png"
+							width="39.2vh"
+							height="56.4vh" />
+					</a>
+				</div>
+				<div class="right">
+					<a href="/" class="navFlex">
+						<p class="title">Kopke.ca</p>
+					</a>
+				</div>
 			</header>
 
 			<main>
@@ -71,14 +75,14 @@
 
 			<footer>
 				<div id="smallFooter">
-					<h4>Copyright &copy; 2022 Kopke Family</h4>
+					<h4 class="left">Copyright &copy; 2022 Kopke Family</h4>
 					<div>
-						<a href="/">
+						<a class="center" href="/">
 							<p class="title">Kopke Family Website</p>
 						</a>
 					</div>
 					<div class="dropdown">
-						<a id="theme" class="theme-changer">
+						<a id="theme" class="right theme-changer">
 							<span id="mode-logo" class="material-icons-sharp">
 								contrast
 							</span>

@@ -23,15 +23,12 @@ header {
 	text-decoration: none;
 	color: var(--black);
 	font-size: 1.15rem;
-	padding: 1vh;
+	margin: 1vh;
+}
+header div {
+	flex: 1;
 }
 
 header p {
 	text-align: right;
-}
-
-/* Center .logo on the screen */
-.logo {
-	display: flex;
-	justify-content: center;
 }
